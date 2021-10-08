@@ -4,11 +4,11 @@ pragma solidity ^0.8.7;
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
-contract GameItem is ERC721 {
+contract MusicNft is ERC721 {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
-    constructor() public ERC721("Pokemon", "pkn") {}
+    constructor() public ERC721("Music", "mnft") {}
 
     function awardItem(address player, string memory tokenURI)
         public
